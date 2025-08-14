@@ -9,11 +9,13 @@ public class Dokibird : MonoBehaviour
     [SerializeField] private AudioClip whoisthat;
     public Animator animator;
     public bool isThereASound;
+    public string status;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         isThereASound = false;
+        status = "idle";
 
         if (isRed)
         {
@@ -33,6 +35,7 @@ public class Dokibird : MonoBehaviour
                 Debug.Log("A");
                 SoundFXManager.instance.PlaySoundFXClip(yay, transform, 1f);
                 animator.SetBool("neutral", true);
+                ChangeStatus("neutral");
             }
 
             if (Input.GetKeyDown(KeyCode.B))
@@ -40,12 +43,14 @@ public class Dokibird : MonoBehaviour
                 Debug.Log("B");
                 SoundFXManager.instance.PlaySoundFXClip(test, transform, 1f);
                 animator.SetBool("angry", true);
+                ChangeStatus("angry");
             }
 
             if (Input.GetKey(KeyCode.C))
             {
                 SoundFXManager.instance.PlaySoundFXClip(whoisthat, transform, 1f);
                 animator.SetBool("suprised", true);
+                ChangeStatus("suprised");
             }
         }
 
@@ -65,6 +70,12 @@ public class Dokibird : MonoBehaviour
             animator.SetBool("neutral", false);
             animator.SetBool("angry", false);
             animator.SetBool("suprised", false);
+            ChangeStatus("idle");
         }
+    }
+
+    private void ChangeStatus(string emote)
+    {
+        status = emote;
     }
 }
