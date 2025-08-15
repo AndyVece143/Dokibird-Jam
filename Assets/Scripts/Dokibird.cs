@@ -17,6 +17,8 @@ public class Dokibird : MonoBehaviour
         isThereASound = false;
         status = "idle";
 
+        isRed = StaticData.valueToKeep;
+
         if (isRed)
         {
             animator.SetBool("red", true);
