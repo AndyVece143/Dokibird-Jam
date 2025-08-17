@@ -13,6 +13,7 @@ public class OptionsManager : MonoBehaviour
     void Start()
     {
         toggle.isOn = StaticData.valueToKeep;
+        GameObject.FindGameObjectWithTag("Music").GetComponent<MusicClass>().PlayMusic();
     }
 
     // Update is called once per frame

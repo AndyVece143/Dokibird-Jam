@@ -149,7 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ae94f1d8c0bb5641a3166904d1408f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoFileName: testvideo.mp4
+  videoFileName: chainvideo.mp4
+  startVideo: 0
 --- !u!328 &39070881
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -235,8 +236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -90.4, y: 23}
-  m_SizeDelta: {x: 301, y: 170}
+  m_AnchoredPosition: {x: -347, y: 89}
+  m_SizeDelta: {x: 1157, y: 652}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &325032864
 MonoBehaviour:
@@ -679,6 +680,16 @@ MonoBehaviour:
   yay: {fileID: 8300000, guid: 67245df1533b75a41b98af255347dea9, type: 3}
   test: {fileID: 8300000, guid: 4a447803d1f8d0a47905a9885eda220b, type: 3}
   whoisthat: {fileID: 8300000, guid: f9de2b6b98b7d6d4198ee5d5a2005334, type: 3}
+  fingStupid: {fileID: 8300000, guid: 39f7e1451e99f334da19cd4ef450da75, type: 3}
+  hawkTuah: {fileID: 8300000, guid: 6ccc22d2d84d8a94a9aea7a415783bb7, type: 3}
+  dontCare: {fileID: 8300000, guid: c527c7a5267ed704ca83727d7f1aecf1, type: 3}
+  jesus: {fileID: 8300000, guid: 991b29835a6386147a4129be54f2ff32, type: 3}
+  laugh: {fileID: 8300000, guid: f8640a73f33a864439afc1a87a98b1a6, type: 3}
+  likeAChain: {fileID: 8300000, guid: 61d182620689c164f96515e1f825b96b, type: 3}
+  ohGod: {fileID: 8300000, guid: 33271c6d7c1420948a52c5004b85683c, type: 3}
+  thatsAlright: {fileID: 8300000, guid: c20ab5600fbbb3441b6eca05c6e235a3, type: 3}
+  woahNo: {fileID: 8300000, guid: cc0e5dee9b6f0e14d8560a66584922e4, type: 3}
+  iAmSad: {fileID: 8300000, guid: 45021b07c706b9a41b93788e378061d5, type: 3}
   animator: {fileID: 701549130}
   isThereASound: 0
   status: 
@@ -797,6 +808,7 @@ MonoBehaviour:
   points: 0
   status: 
   doki: {fileID: 701549133}
+  vidPlayer: {fileID: 39070880}
 --- !u!4 &1126102668
 Transform:
   m_ObjectHideFlags: 0
@@ -846,8 +858,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -7.3, y: -16.1}
-  m_SizeDelta: {x: 120.6432, y: 43.3038}
+  m_AnchoredPosition: {x: -52, y: -61.868}
+  m_SizeDelta: {x: 343.5632, y: 43.3038}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153882754
 MonoBehaviour:
@@ -896,8 +908,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1022,7 +1034,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 500, y: 281}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1186,7 +1198,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 451, y: -83}
+  m_AnchoredPosition: {x: 1190, y: -151}
   m_SizeDelta: {x: 345.1194, y: 85.5685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1616801324
@@ -1428,8 +1440,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1496,8 +1508,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -84.84418, y: 51.046494}
-  m_SizeDelta: {x: 154.0035, y: 91.466}
+  m_AnchoredPosition: {x: -319.6521, y: 190.38199}
+  m_SizeDelta: {x: 610.8789, y: 351.9919}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
